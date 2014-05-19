@@ -12,17 +12,17 @@ namespace WebApplication.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            return View();
+            return PartialView();
         }
 
         public ActionResult About()
         {
-            return View();
+            return PartialView();
         }
 
         public ActionResult Contact()
         {
-            return View();
+            return PartialView();
         }
 
         public ActionResult Spa()
