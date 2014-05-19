@@ -1,0 +1,1 @@
+placeholder for kendo angular spa project
