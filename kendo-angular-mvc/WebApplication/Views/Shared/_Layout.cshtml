@@ -23,7 +23,13 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#/">Home</a></li>
                     <li><a href="#/details">Details</a></li>
-                    <li><a href="#/sample">Sample</a></li>
+                    <li class="dropdown">
+                        <a onclick="return false" data-toggle="dropdown" class="dropdown-toggle">Samples <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/samples/listview">ListView</a></li>
+                            <li><a href="#/samples/grid">Grid</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://telerik.com/kendo-ui" target="_blank">Kendo UI By Telerik</a></li>

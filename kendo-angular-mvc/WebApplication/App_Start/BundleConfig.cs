@@ -28,7 +28,8 @@ namespace WebApplication
                 "~/App/app.js",
                 "~/App/views/home/home.js",
                 "~/App/views/details/details.js",
-                "~/App/views/sample/sample.js",
+                "~/App/views/samples/grid/grid.js",
+                "~/App/views/samples/listview/listview.js",
                 "~/App/services/productDataSource.js"
                 ));
 

@@ -13,10 +13,15 @@ var webApplication = angular.module('webApplication', ['kendo.directives', 'ngRo
                 templateUrl: '/app/views/details/details.html',
                 controller: 'detailsController'
             })
-            .when('/sample',
+            .when('/samples/listview',
             {
-                templateUrl: '/app/views/sample/sample.html',
-                controller: 'sampleController'
+                templateUrl: '/app/views/samples/listview/listview.html',
+                controller: 'listViewController'
+            })
+            .when('/samples/grid',
+            {
+                templateUrl: '/app/views/samples/grid/grid.html',
+                controller: 'gridController'
             })
             .otherwise(
             {
