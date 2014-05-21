@@ -1,0 +1,15 @@
+﻿<h1>{{title}}</h1>
+
+<div class="k-content" style="width: 100%">
+    <div kendo-grid="grid"
+         k-sortable="true"
+         k-pageable="true"
+         k-filterable="true"
+         k-columns='[
+            "ProductName",
+            { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: "130px" },
+            { field: "UnitsInStock", title: "Units In Stock", width: "130px" },
+            { field: "Discontinued", width: "130px" }]'
+         k-data-source="productDataSource">
+    </div>
+</div>
