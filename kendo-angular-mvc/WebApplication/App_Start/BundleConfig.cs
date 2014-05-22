@@ -21,14 +21,13 @@ namespace WebApplication
                 "~/Scripts/angular-animate.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
-                "~/Scripts/kendo/2014.1.318/kendo.web.min.js",
+                "~/Scripts/kendo/2014.1.416/kendo.ui.core.min.js",
                 "~/Scripts/angular-kendo.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/App/app.js",
                 "~/App/views/home/home.js",
                 "~/App/views/details/details.js",
-                "~/App/views/samples/grid/grid.js",
                 "~/App/views/samples/listview/listview.js",
                 "~/App/services/productDataSource.js"
                 ));
@@ -42,8 +41,8 @@ namespace WebApplication
                 "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/kendo").Include(
-                "~/Content/kendo/2014.1.318/kendo.common.min.css",
-                "~/Content/kendo/2014.1.318/kendo.bootstrap.min.css"));
+                "~/Content/kendo/2014.1.416/kendo.common.min.css",
+                "~/Content/kendo/2014.1.416/kendo.bootstrap.min.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
