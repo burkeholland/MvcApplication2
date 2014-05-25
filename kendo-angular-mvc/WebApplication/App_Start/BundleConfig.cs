@@ -20,18 +20,6 @@ namespace WebApplication
                 "~/Scripts/angular-route.js",
                 "~/Scripts/angular-animate.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
-                "~/Scripts/kendo/2014.1.416/kendo.ui.core.min.js",
-                "~/Scripts/angular-kendo.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                "~/App/app.js",
-                "~/App/views/home/home.js",
-                "~/App/views/details/details.js",
-                "~/App/views/samples/listview/listview.js",
-                "~/App/services/productDataSource.js"
-                ));
-
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));

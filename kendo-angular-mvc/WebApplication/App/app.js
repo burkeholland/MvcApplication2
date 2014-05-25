@@ -1,25 +1,13 @@
-﻿'use strict';
+﻿define([
+    './controllers/index',
+    './services/index'
+], function (controllers, index) {
 
-var webApplication = angular.module('webApplication', ['kendo.directives', 'ngRoute', 'ngAnimate'])
-    .config(function ($routeProvider) {
-        $routeProvider
-            .when('/home',
-            {
-                templateUrl: '/app/views/home/home.html',
-                controller: 'homeController'
-            })
-            .when('/details',
-            {
-                templateUrl: '/app/views/details/details.html',
-                controller: 'detailsController'
-            })
-            .when('/samples/listview',
-            {
-                templateUrl: '/app/views/samples/listview/listview.html',
-                controller: 'listViewController'
-            })
-            .otherwise(
-            {
-                redirectTo: '/home'
-            });
-    });
+    return angular.module('app', [
+        'ngRoute',
+        'kendo.directives',
+        'app.controllers',
+        'app.services'
+    ]);
+
+});
